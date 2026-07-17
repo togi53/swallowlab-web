@@ -148,6 +148,7 @@ nav.scrolled {
     transition: var(--transition);
 }
 
+
 /* Layout Utilities */
 section {
     min-height: 100vh;
@@ -476,9 +477,20 @@ footer p {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2) { opacity: 0; }
-    .hamburger.active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hamburger.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .hamburger.active .bar:nth-child(1) { 
+        transform: translateY(7px) rotate(-40deg); 
+        width: 14px; 
+        transform-origin: right center; 
+    }
+    .hamburger.active .bar:nth-child(2) { 
+        transform: translateY(0px) rotate(40deg); 
+        width: 14px; 
+        transform-origin: left center; 
+    }
+    .hamburger.active .bar:nth-child(3) { 
+        opacity: 0; 
+        transform: scaleX(0); 
+    }
 
     .nav-links {
         position: fixed;

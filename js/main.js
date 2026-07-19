@@ -84,4 +84,34 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initial check for active link
     window.dispatchEvent(new Event('scroll'));
+
+    // 6. Scroll Animations (Intersection Observer)
+    const fadeElements = document.querySelectorAll('.fade-up');
+    
+    const appearOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    fadeElements.forEach(el => {
+        appearOnScroll.observe(el);
+    });
+    
+    // Trigger immediately for items already in viewport
+    setTimeout(() => {
+        fadeElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
 });

@@ -1,7 +1,6 @@
 const translations = {
     tr: {
         "nav_home": "Ana Sayfa",
-        "nav_showcase": "3D Önizleme",
         "nav_services": "Hizmetler",
         "nav_about": "Hakkımızda",
         "nav_faq": "SSS",
@@ -11,8 +10,6 @@ const translations = {
         "hero_title_2": "Şekillendiriyoruz",
         "hero_subtitle": "Profesyonel 3D görselleştirme ve modelleme stüdyosu.",
         "hero_cta": "Bize Ulaşın",
-        "showcase_title": "Canlı 3D Önizleme",
-        "showcase_subtitle": "Fare ile modeli döndürün ve yakınlaştırın.",
         "services_title": "Hizmetlerimiz",
         "srv_1_title": "3D Prototipleme ve Baskı",
         "srv_1_desc": "Fikirlerinizi fiziksel dünyaya taşıyoruz. Hassas 3D baskı ve hızlı prototipleme.",
@@ -44,7 +41,6 @@ const translations = {
     },
     en: {
         "nav_home": "Home",
-        "nav_showcase": "3D Preview",
         "nav_services": "Services",
         "nav_about": "About Us",
         "nav_faq": "FAQ",
@@ -54,8 +50,6 @@ const translations = {
         "hero_title_2": "The Future",
         "hero_subtitle": "Professional 3D visualization and modeling studio.",
         "hero_cta": "Contact Us",
-        "showcase_title": "Live 3D Preview",
-        "showcase_subtitle": "Rotate and zoom the model with your mouse.",
         "services_title": "Our Services",
         "srv_1_title": "3D Prototyping & Printing",
         "srv_1_desc": "Bringing your ideas to the physical world with precision 3D printing and rapid prototyping.",

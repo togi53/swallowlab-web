@@ -179,6 +179,21 @@ nav.scrolled {
     color: var(--text-primary);
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: var(--transition);
+}
+
 /* Buttons & Links */
 .cta-button {
     display: inline-block;
@@ -514,8 +529,25 @@ footer {
         --spacing-section: 80px;
     }
     
+    .hamburger {
+        display: flex;
+    }
+    
     .nav-links {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-main);
+        padding: 2rem;
+        border-bottom: 1px solid var(--border-color);
+        gap: 1.5rem;
+    }
+    
+    .nav-links.active {
+        display: flex;
     }
     
     h1 {

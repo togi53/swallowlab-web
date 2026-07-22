@@ -135,6 +135,10 @@ nav.scrolled {
     color: var(--text-primary);
 }
 
+.mobile-store-link {
+    display: none;
+}
+
 .nav-controls {
     display: flex;
     align-items: center;
@@ -253,13 +257,7 @@ nav.scrolled {
 }
 
 #hero-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
+    display: none; /* Safely hide if still present in older HTML versions */
 }
 
 .hero .container {
@@ -270,11 +268,14 @@ nav.scrolled {
 
 .hero-content {
     max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
     pointer-events: auto; /* Buttons inside should be clickable */
 }
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -531,6 +532,13 @@ footer {
     
     .hamburger {
         display: flex;
+    }
+    
+    .mobile-store-link {
+        display: block;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
     }
     
     .nav-links {

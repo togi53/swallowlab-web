@@ -135,6 +135,10 @@ nav.scrolled {
     color: var(--text-primary);
 }
 
+.mobile-store-link {
+    display: none;
+}
+
 .nav-controls {
     display: flex;
     align-items: center;
@@ -231,6 +235,20 @@ nav.scrolled {
     border-bottom-color: var(--text-primary);
 }
 
+.micro-link {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    transition: var(--transition);
+}
+
+.micro-link:hover {
+    color: var(--text-primary);
+}
+
 .cta-button.outline {
     background: transparent;
     color: var(--text-primary);
@@ -269,7 +287,7 @@ nav.scrolled {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 600px;
     pointer-events: auto; /* Buttons inside should be clickable */
 }
 
@@ -531,6 +549,13 @@ footer {
     
     .hamburger {
         display: flex;
+    }
+    
+    .mobile-store-link {
+        display: block;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
     }
     
     .nav-links {

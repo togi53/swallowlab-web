@@ -43,6 +43,7 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
+            <canvas id="hero-canvas"></canvas>
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title fade-up" style="transition-delay: 0.1s;">
@@ -167,15 +168,15 @@
                     <div class="info-block">
                         <h3 data-i18n="contact_phone_title">İletişim Kanalları</h3>
                         <p>Tolga Namoğlu</p>
-                        <div class="info-links">
-                            <a href="tel:+905061904525" class="text-link">Arama</a>
-                            <a href="https://wa.me/905061904525" target="_blank" class="text-link">WhatsApp</a>
+                        <div class="info-links" style="gap: 1.5rem; margin-top: 0.5rem;">
+                            <a href="tel:+905061904525" class="micro-link">tel.</a>
+                            <a href="https://wa.me/905061904525" target="_blank" class="micro-link">wa.</a>
                         </div>
                         
                         <p style="margin-top: 2rem;">Furkan Deniz</p>
-                        <div class="info-links">
-                            <a href="tel:+905075312621" class="text-link">Arama</a>
-                            <a href="https://wa.me/905075312621" target="_blank" class="text-link">WhatsApp</a>
+                        <div class="info-links" style="gap: 1.5rem; margin-top: 0.5rem;">
+                            <a href="tel:+905075312621" class="micro-link">tel.</a>
+                            <a href="https://wa.me/905075312621" target="_blank" class="micro-link">wa.</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +195,12 @@
         </div>
     </footer>
 
-    <script src="js/i18n.js?v=2.1"></script>
-    <script src="js/main.js?v=2.1"></script>
+    <!-- Three.js & GLTFLoader CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script src="js/i18n.js?v=2.2"></script>
+    <script src="js/main.js?v=2.2"></script>
+    <script src="js/3d-hero.js?v=2.2"></script>
 </body>
 </html>

@@ -235,6 +235,20 @@ nav.scrolled {
     border-bottom-color: var(--text-primary);
 }
 
+.micro-link {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    transition: var(--transition);
+}
+
+.micro-link:hover {
+    color: var(--text-primary);
+}
+
 .cta-button.outline {
     background: transparent;
     color: var(--text-primary);
@@ -257,7 +271,13 @@ nav.scrolled {
 }
 
 #hero-canvas {
-    display: none; /* Safely hide if still present in older HTML versions */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero .container {
@@ -267,15 +287,12 @@ nav.scrolled {
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 600px;
     pointer-events: auto; /* Buttons inside should be clickable */
 }
 
 .hero-buttons {
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
     flex-wrap: wrap;

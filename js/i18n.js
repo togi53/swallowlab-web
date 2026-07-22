@@ -97,13 +97,10 @@ function setLanguage(lang) {
                     el.placeholder = translations[lang][key];
                 }
             } else {
-                // If the key is for hero title, it needs special handling for gradient span
                 if (key === 'hero_title_1') {
-                    const span = el.querySelector('span.gradient-text');
-                    const spanHTML = span ? span.outerHTML : `<span class="gradient-text">${translations[lang]['hero_title_2']}</span>`;
-                    el.innerHTML = `${translations[lang][key]} <br>${spanHTML}`;
+                    el.innerHTML = translations[lang][key];
                 } else if (key === 'hero_title_2') {
-                     // handled by hero_title_1
+                    el.innerHTML = translations[lang][key];
                 } else {
                     el.innerHTML = translations[lang][key];
                 }
